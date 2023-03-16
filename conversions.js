@@ -1,14 +1,13 @@
 "use strict";
 
-
 function lbsToKg(pounds) {
-    const KILOGRAMS_PER_POUNDS = 0.45359237;
-    return pounds * KILOGRAMS_PER_POUNDS;
+  const KILOGRAMS_PER_POUNDS = 0.45359237;
+  return pounds * KILOGRAMS_PER_POUNDS;
 }
 
 function kgToLbs(kilograms) {
-    const POUNDS_PER_KILOGRAM = 2.20462262;
-    return kilograms * POUNDS_PER_KILOGRAM;
+  const POUNDS_PER_KILOGRAM = 2.20462262;
+  return kilograms * POUNDS_PER_KILOGRAM;
 }
 
 function convert(conversionType, value) {
@@ -61,9 +60,7 @@ function convert(conversionType, value) {
       return lToG(value);
       break;
   }
-
 }
-
 
 function feetToM(feet) {
   const FEET_PER_M = 0.3048;
@@ -76,12 +73,21 @@ function mTofeet(meters) {
 }
 
 function inchToCm(inches) {
-   let centimeters = inches * 2.54;
-   return centimeters;
+  let centimeters = inches * 2.54;
+  return centimeters;
 }
 
 function cmToInch(centimeters) {
-   let inches = centimeters * 0.393701;
-   return inches;
+  let inches = centimeters * 0.393701;
+  return inches;
 }
 
+function gToL(gallons) {
+  const liters = gallons * 3.78541;
+  return liters;
+}
+
+function lToG(liters) {
+  const gallons = liters / 3.78541;
+  return gallons;
+}
