@@ -5,5 +5,5 @@ function gToL(gallons) {
 
 function lToG(liters) {
   const gallons = liters / 3.78541;
-  return gllons;
+  return gallons;
 }
