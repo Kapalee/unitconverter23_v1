@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Unit Converter 23</title>
+</head>
+
+<body>
+    <h1>Unit Converter 23</h1>
+    <label for="conversiontype">Convert:
+        <select id="conversiontype">
+            <option value="inchToCm">inches to centimeters</option>
+            <option value="cmToInch">centimeters to inches</option>
+            <option value="milesToKm">miles to kilometers</option>
+            <option value="kmToMiles">kilometers to miles</option>
+            <option value="fToC">Fahrenheit to Celcius</option>
+            <option value="cToF">Celcius to Fahrenheit</option>
+            <option value="feetToM">feet to meters</option>
+            <option value="mToFeet">meters to feet</option>
+            <option value="lbsToKg">pounds to kilograms</option>
+            <option value="kgToLbs">kilograms to pounds</option>
+            <option value="gToL">gallons to liters</option>
+            <option value="lToG">liters to gallons</option>
+        </select>
+    </label>
+    <label for="inputvalue">
+        from
+        <div><input type="number" name="inputvalue" id="inputvalue">
+        <span id="inputunit">unit</span></div>
+    </label>
+    <label for="outputvalue">
+        to
+        <div><output for="conversiontype inputvalue" id="outputvalue">  </output>
+        <span id="outputunit">unit</span></div>
+    </label>
+
+    <script src="conversions.js"></script>
+    <script src="ui.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
